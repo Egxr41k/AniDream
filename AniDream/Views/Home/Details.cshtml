@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "";
+}
+<header class="header">
+    <div class="header__nav">
+        <h1 class="title">AniDream</h1>
+    </div>
+</header>
+<main class="main" id="@ViewData["Id"]">
+    <div class="card__full">
+        <div class="card__content card__object" >
+            <img  alt="">
+        </div>
+        <div class="card__info">
+            <div class = "card__text-rate"></div>
+            <div class = 'card__desc'>
+                 <h2 class="card__title"></h2>
+                 <span class="card__rate"></span>
+            </div>
+            <div class="card__genre">
+                <span>жанры:</span><br>
+                <span class="card__info-text" id="genre"></span>
+            </div>
+            <div class="card__age">
+                <span>возрастной ценз:</span><br>
+                <span class="card__info-text" id="age"></span>
+            </div>
+            <div class="card__year">
+                <span>год выпуска:</span><br>
+                <span class="card__info-text" id="year"></span>
+            </div>
+            <div class="card__description">
+                <span>Описание:</span><br><br>
+                <span class="card__info-text" id="description"></span>
+            </div>
+        </div>             
+    </div>
+    <div class="trailer">
+        <h2>
+            Trailer
+        </h2>
+        <iframe class="player"
+                width="695"
+                height="450"
+                title="YouTube video player"
+                allow="accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture"
+                allowFullScreen>
+        </iframe>
+    </div>
+</main>
+<footer class="footer">
+
+</footer>
+<script src="~/js/page.js" asp-append-version="true" type="module" defer></script>
+
